@@ -1,0 +1,182 @@
+body {
+    background-color: #121312;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+button{
+    color: #121312;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    height: 30px;
+
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+* {
+  color: #ffffff;
+}
+
+.main-container {
+    position: relative;
+}
+
+.PersonalBest{
+    display:flex;
+    align-items: center;
+}
+
+.mainbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats h2:not(:last-child) {
+    border-right: 2px solid #444;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.difficulty{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr.custom-line {
+  border: none;               /* Remove the default browser border */
+  border-top: 2px solid #333; /* Set the thickness, style, and color */
+  width: 100%;                /* Control the width of the line */
+  margin: 20px 0;             /* Add spacing above and below the line */
+}
+
+.typing-text{
+    text-align: center;
+    padding-top:50px;
+}
+
+.typing-text span{
+    font-family:sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.correct {
+    color: green !important;
+}
+
+.incorrect{
+    color: red !important;
+}
+
+.starter {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-color: rgba(18, 19, 18, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+}
+.text-container {
+    position: relative;
+    flex: 1;
+}
+
+.starter button{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: blue;
+    border-style: none;
+}
+
+.starter button:hover {
+    width: 210px;
+    height: 70px;
+    background-color:rgb(16, 39, 208);
+    cursor: pointer;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.highlight{
+    background-color: #333;
+}
+
+.results {
+     position: fixed;
+    top: 70.5px; /* Adjust to your navbar's actual height */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    background-color: rgba(18, 19, 18);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideresults{
+display: none;
+}
+
+
+.resContainer{
+    display: flex;
+}
+.finalStats{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.resContainer img{
+    width: 50px;
+}
+
+.finalStats div{
+    display: flex;
+    border-width: 10px;
+    border-color: rgb(86, 69, 69);
+    background-color: rgb(120, 131, 127);
+    margin: 10px;
+    padding: 10px;
+}
+
+.resContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

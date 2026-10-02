@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Typing Speed Test</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <img src="./assets/images/logo-large.svg" alt="Typing Speed Test Logo">
+    <div class="PersonalBest">
+    <img src="./assets/images/icon-personal-best.svg" alt="Personal Best Icon">
+    <p class="personalB">Personal Best: {WPM}</p>
+    </div>
+</nav>
+<div class="results hideresults">
+  <div class="resContainer">
+    <img src="./assets/images/icon-completed.svg" alt="">
+    <h1>Test Complete!</h1>
+    <h2>Solid run, keep pushing to beat your high score!</h1>
+    <div class="finalStats">
+      <div>
+        <p>WPM</p>
+        <p class="finalwpm">WPM</p>
+      </div>
+      <div>
+        <p>Accuracy</p>
+        <p class="finalaccuracy">Accuracy</p>
+      </div>
+        <div>
+        <p>Characters</p>
+        <p>WPM</p>
+      </div>
+      <button class="retry">Try Again!</button>
+    </div>
+  </div>
+</div>
+
+<div class="main-container">
+  
+<div class="mainbar">
+  <div class="stats">
+    <h2 class="wpm">WPM: 0</h1>
+    <h2 class="accuracy">Accuracy: 100%</h2>
+    <h2 class="time">Time: 30</h3>
+  </div>
+  
+  <div class="difficulty">
+    <h1>Difficulty:</h1>
+    <button id="easy" class="easy">Easy</button>
+    <button id="medium" class="medium">Medium</button>
+    <button id="hard" class="hard">Hard</button>
+  </div>
+  <div class="mode">
+    <h1>Mode:</h1>
+    <button class="timed">Timed (60s)</button>
+    <button class="passage">Passage</button>
+  </div>
+  
+</div>
+<hr class="custom-line">
+</div>
+
+<div class="text-container">
+  <div class="starter">
+  <button class="start-button">Start Typing</button>
+</div>
+  <p class="typing-text" id="js-typing-text">
+    
+  </p>
+</div>
+ 
+</body>
+<script type= "module" src="./script.js"></script>
+</html>
