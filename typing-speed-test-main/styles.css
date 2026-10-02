@@ -1,5 +1,5 @@
 body {
-    background-color: #121312;
+    background-color: #2f2a2c;
     padding: 20px;
     margin: 0;
     display: flex;
@@ -29,6 +29,7 @@ button{
 
 * {
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-container {
@@ -89,18 +90,18 @@ hr.custom-line {
 }
 
 .correct {
-    color: green !important;
+    color: rgb(88, 94, 88) !important;
 }
 
 .incorrect{
-    color: red !important;
+    color: rgb(169, 48, 48) !important;
 }
 
 .starter {
     position: absolute;
     inset: 0;
     z-index: 10;
-    background-color: rgba(18, 19, 18, 0.7);
+    background-color: #211f20 0.7;
     backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
@@ -110,18 +111,27 @@ hr.custom-line {
     flex: 1;
 }
 
+.text-container span{
+      font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
 .starter button{
     width: 200px;
     height: 60px;
     border-radius: 20px;
-    background-color: blue;
+    background-color: rgb(89, 75, 89);
     border-style: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .starter button:hover {
     width: 210px;
     height: 70px;
-    background-color:rgb(16, 39, 208);
+    background-color:rgb(89, 75, 89);
     cursor: pointer;
 }
 
@@ -142,12 +152,14 @@ hr.custom-line {
     bottom: 0;
     z-index: 1000;
 
-    background-color: rgba(18, 19, 18);
+    background-color: #2f2a2c;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .hideresults{
 display: none;
